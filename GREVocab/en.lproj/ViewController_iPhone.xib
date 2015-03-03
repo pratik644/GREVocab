@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController">
+            <connections>
+                <outlet property="backBtn" destination="41" id="72"/>
+                <outlet property="bookmarkBtn" destination="71" id="96"/>
+                <outlet property="callOut" destination="Gpa-mD-uOp" id="f5k-xN-1l7"/>
+                <outlet property="callOutImage" destination="4IJ-Ga-6T0" id="bQB-KT-g8w"/>
+                <outlet property="imgView" destination="3ue-fI-Rcd" id="w5w-Wa-eQ8"/>
+                <outlet property="listPicker" destination="6wh-RQ-wqI" id="6jE-v8-QOe"/>
+                <outlet property="listPickerContainer" destination="SHl-RP-eg6" id="0oO-Y7-jZQ"/>
+                <outlet property="swipeLeft" destination="86" id="99"/>
+                <outlet property="swipeLefti" destination="88" id="100"/>
+                <outlet property="swipeRight" destination="56" id="68"/>
+                <outlet property="swipeRighti" destination="62" id="67"/>
+                <outlet property="txtView" destination="16" id="bkg-59-k3i"/>
+                <outlet property="view" destination="6" id="7"/>
+                <outlet property="wordTitle" destination="107" id="108"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="6">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="828"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" editable="NO" usesAttributedText="YES" id="16">
+                    <rect key="frame" x="0.0" y="58" width="320" height="400"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
+                    <attributedString key="attributedText"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="56" appends="YES" id="57"/>
+                        <outletCollection property="gestureRecognizers" destination="86" appends="YES" id="87"/>
+                    </connections>
+                </textView>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="3ue-fI-Rcd">
+                    <rect key="frame" x="0.0" y="58" width="320" height="510"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="109">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.80000000000000004" alpha="1" colorSpace="calibratedWhite"/>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" contentMode="left" text=":)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" id="107">
+                    <rect key="frame" x="58" y="10" width="150" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <gestureRecognizers/>
+                    <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="112" appends="YES" id="113"/>
+                    </connections>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="124">
+                    <rect key="frame" x="0.0" y="0.0" width="52" height="60"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.80000000000000004" alpha="1" colorSpace="calibratedWhite"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="41">
+                    <rect key="frame" x="10" y="10" width="40" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                    <state key="normal" backgroundImage="BackBtn.png">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="backBtnTapped" destination="-1" eventType="touchUpInside" id="73"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="125">
+                    <rect key="frame" x="220" y="0.0" width="100" height="60"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.80000000000000004" alpha="1" colorSpace="calibratedWhite"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="71">
+                    <rect key="frame" x="270" y="10" width="40" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                    <state key="normal" backgroundImage="shuffle.png">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="shuffleBtnTapped:" destination="-1" eventType="touchUpInside" id="115"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ta3-P0-hHs">
+                    <rect key="frame" x="222" y="10" width="40" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" backgroundImage="imgIcon.png"/>
+                    <connections>
+                        <action selector="hideImage" destination="-1" eventType="touchUpInside" id="GTL-Fm-diZ"/>
+                        <action selector="hideImage" destination="-1" eventType="touchUpOutside" id="Y5u-BC-ek2"/>
+                        <action selector="showImage" destination="-1" eventType="touchDown" id="Xsy-WU-Cb6"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" id="SHl-RP-eg6">
+                    <rect key="frame" x="0.0" y="568" width="320" height="260"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <pickerView contentMode="scaleToFill" id="6wh-RQ-wqI">
+                            <rect key="frame" x="0.0" y="44" width="320" height="216"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="HRt-pH-1Ot"/>
+                                <outlet property="delegate" destination="-1" id="XFQ-FJ-di1"/>
+                            </connections>
+                        </pickerView>
+                        <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" id="tpr-Ye-seZ">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <color key="backgroundColor" red="1" green="0.54901963470000004" blue="0.1294117719" alpha="1" colorSpace="deviceRGB"/>
+                            <items>
+                                <barButtonItem title="Cancel" id="coa-Lv-Kxg">
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <connections>
+                                        <action selector="cancelButtonTapped" destination="-1" id="VxU-eS-a2d"/>
+                                    </connections>
+                                </barButtonItem>
+                                <barButtonItem style="plain" systemItem="flexibleSpace" id="3la-9b-exY"/>
+                                <barButtonItem title="Done" id="xti-uJ-elK">
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <connections>
+                                        <action selector="doneButtonTapped" destination="-1" id="6xS-sY-q9P"/>
+                                    </connections>
+                                </barButtonItem>
+                            </items>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="barTintColor" red="1" green="0.54901963470000004" blue="0.1294117719" alpha="1" colorSpace="deviceRGB"/>
+                        </toolbar>
+                    </subviews>
+                    <color key="backgroundColor" red="0.48538142919999999" green="0.76281273569999997" blue="0.77640656500000005" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" id="Gpa-mD-uOp">
+                    <rect key="frame" x="24" y="44" width="272" height="349"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="4IJ-Ga-6T0">
+                            <rect key="frame" x="0.0" y="0.0" width="272" height="349"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+        <swipeGestureRecognizer delaysTouchesEnded="NO" direction="right" id="56">
+            <connections>
+                <action selector="swipedRight:" destination="-1" id="102"/>
+                <outlet property="delegate" destination="-1" id="59"/>
+            </connections>
+        </swipeGestureRecognizer>
+        <swipeGestureRecognizer delaysTouchesEnded="NO" direction="right" id="62">
+            <connections>
+                <action selector="swipedRight:" destination="-1" id="101"/>
+                <outlet property="delegate" destination="-1" id="66"/>
+            </connections>
+        </swipeGestureRecognizer>
+        <swipeGestureRecognizer delaysTouchesEnded="NO" direction="left" id="86">
+            <connections>
+                <action selector="swipedLeft:" destination="-1" id="98"/>
+                <outlet property="delegate" destination="-1" id="91"/>
+            </connections>
+        </swipeGestureRecognizer>
+        <swipeGestureRecognizer delaysTouchesEnded="NO" direction="left" id="88">
+            <connections>
+                <action selector="swipedLeft:" destination="-1" id="97"/>
+                <outlet property="delegate" destination="-1" id="90"/>
+            </connections>
+        </swipeGestureRecognizer>
+        <tapGestureRecognizer delaysTouchesEnded="NO" numberOfTapsRequired="2" id="112">
+            <connections>
+                <action selector="bookmarkBtnTapped:" destination="-1" id="116"/>
+                <outlet property="delegate" destination="-1" id="114"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="BackBtn.png" width="40" height="40"/>
+        <image name="imgIcon.png" width="40" height="40"/>
+        <image name="shuffle.png" width="40" height="40"/>
+    </resources>
+</document>
